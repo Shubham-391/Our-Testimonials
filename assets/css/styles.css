@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Nunito:wght@700;900&display=swap');
+
+:root {
+    /* font size */
+    --small1: 16px;
+    /*original 17px*/
+    --medium: 17px;
+    /*original 18px*/
+    --large: 21px;
+    /*original 24px*/
+    --extraLarge: 32px;
+    /*original 44px*/
+
+    /* color */
+    --black1: #1E1E1E;
+    --yellow1: #FBCC04;
+    --yellow2: #FACA10;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.fw-900 {
+    font-weight: 900;
+}
+
+/* font family */
+.nunito {
+    font-family: "Nunito";
+}
+
+.lora {
+    font-family: "Lora";
+}
+
+/* color */
+.black1 {
+    --black1: #1E1E1E;
+}
+
+.yellow1 {
+    --yellow1: #FBCC04;
+}
+
+.yellow2 {
+    --yellow2: #FACA10;
+}
+
+/* font size */
+.small1 {
+    font-size: var(--small1);
+}
+
+.medium {
+    font-size: var(--medium);
+}
+
+.large {
+    font-size: var(--large);
+}
+
+.extraLarge {
+    font-size: var(--extraLarge);
+}
+
+.lineHeight133 {
+    line-height: 133.4%;
+}
+
+.letterSpacing088 {
+    letter-spacing: 0.88px;
+}
+
+.lineHeight176 {
+    line-height: 176%;
+}
+
+.letterSpacing036 {
+    letter-spacing: 0.36px;
+}
+
+.lineHeightNormal {
+    line-height: normal;
+}
+
+.letterSpacing12 {
+    letter-spacing: 1.2px;
+}
+
+.letterSpacing085 {
+    letter-spacing: 0.85px;
+}
+
+.line {
+    width: 272px;
+    height: 6px;
+    opacity: 0.7;
+    background: #FBCC04;
+    bottom: 19%;
+    right: 3%;
+}
+
+.max-width-380 {
+    max-width: 380px;
+}
+
+.custom-container {
+    max-width: 888px !important;
+}
+
+.bigCircle {
+    width: 204px;
+    height: 204px;
+    border-radius: 50%;
+    border: 2px solid #FACA10;
+    background: #FFF;
+    opacity: 0.3;
+}
+
+.smallCircle {
+    width: 180px;
+    height: 180px;
+    background: #FFF;
+    border-radius: 50%;
+    border: 2px solid #FACA10;
+    opacity: 1;
+}
+
+.max-width-864 {
+    max-width: 864px;
+}
+
+.quotes {
+    bottom: -11%;
+    right: 35%;
+    width: 50px;
+    height: 37.838px;
+}
+
+.slickSlider1 .slick-slide.slick-center {
+    scale: 1;
+    opacity: 1;
+    display: flex !important;
+    justify-content: center;
+}
+
+.slickSlider1 div:has(+ .slick-center) {
+    scale: 0.75;
+    opacity: 0.7;
+}
+
+.slickSlider1 .slick-center+div {
+    scale: 0.75;
+    opacity: 0.7;
+}
+
+.slickSlider1 .slick-slide {
+    scale: 0.4;
+    opacity: 0.5;
+}
+
+.d_none {
+    display: none;
+}
+
+.circles {
+    top: -16%;
+}
+
+.slickSlider1 .slick-track {
+    min-height: 228px !important;
+    padding-top: 35px !important;
+}
+
+.slickSlider1 .slick-slide .circles {
+    display: none;
+}
+
+.slickSlider1 .slick-slide .quotes {
+    display: none;
+}
+
+.slickSlider1 .slick-slide.slick-center .circles {
+    display: inline-block;
+}
+
+.slickSlider1 .slick-slide.slick-center .quotes {
+    display: inline-block;
+}
+
+/* hiding all bullets by default */
+.slickSlider2 .slick-dots li {
+    display: none
+}
+
+/* only displaying the active bullets and the 2 bullets next to it */
+.slickSlider2 .slick-dots li.slick-active,
+.slickSlider2 .slick-dots li.slick-active+li,
+.slickSlider2 .slick-dots li.slick-active+li+li {
+    display: inline-block;
+}
+
+/* displaying the last three bullets when slick-active class isn't applied to any li before them  */
+.slickSlider2 .slick-dots li:nth-last-child(1),
+.slickSlider2 .slick-dots li:nth-last-child(2),
+.slickSlider2 .slick-dots li:nth-last-child(3) {
+    display: inline-block;
+}
+
+/* hiding the last three bullets if slick-active exist before them */
+.slickSlider2 .slick-dots li.slick-active~li:nth-last-child(1),
+.slickSlider2 .slick-dots li.slick-active~li:nth-last-child(2),
+.slickSlider2 .slick-dots li.slick-active~li:nth-last-child(3) {
+    display: none;
+}
+
+/* specific conditions to always display the last three bullets */
+.slickSlider2 .slick-dots li.slick-active+li+li:nth-last-child(3),
+.slickSlider2 .slick-dots li.slick-active+li+li:nth-last-child(2),
+.slickSlider2 .slick-dots li.slick-active+li+li:nth-last-child(1),
+.slickSlider2 .slick-dots li.slick-active+li:nth-last-child(3),
+.slickSlider2 .slick-dots li.slick-active+li:nth-last-child(2),
+.slickSlider2 .slick-dots li.slick-active+li:nth-last-child(1) {
+    display: inline-block;
+}
+
+.slickSlider2 .slick-dots li button:before {
+    width: 18px !important;
+    height: 18px !important;
+    border-radius: 18px;
+    border: 2px solid #FFF;
+    opacity: 0.4 !important;
+    background: #FACA10;
+    color: #FACA10 !important;
+}
+
+.slickSlider2 .slick-dots li.slick-active button:before {
+    opacity: 1 !important;
+}
+
+@keyframes preloaderLogo {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(20%);
+    }    
+}
+
+.preloaderImage{
+    animation-name: preloaderLogo;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* media queries */
+@media (min-width: 576px) {
+    :root {
+        /* font size */
+        --small1: 17px;
+        --medium: 18px;
+        --large: 24px;
+        --extraLarge: 44px;
+    }
+
+    .quotes {
+        bottom: -11%;
+        right: 21%;
+    }
+
+    .slickSlider1 .slick-track {
+        min-height: 306px !important;
+        padding-top: 70px !important;
+    }
+}
+
+@media (min-width: 887px) {
+    .circles {
+        top: -15%;
+    }
+
+    .quotes {
+        bottom: -11%;
+        right: 1%;
+    }
+}
